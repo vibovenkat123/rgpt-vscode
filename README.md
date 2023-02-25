@@ -16,3 +16,7 @@ git
 ### 0.0.1
 
 Initial release of review-gpt. For now just added the running of the command
+
+### 0.0.2
+
+Added the keyword "vibovenkat123" in case if users look up my github

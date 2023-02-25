@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/vibovenkat123/rgpt-vscode"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -24,7 +24,8 @@
     "gpt",
     "code review",
     "review",
-    "vibovenkat"
+    "vibovenkat",
+    "vibovenkat123"
   ],
   "contributes": {
     "commands": [
