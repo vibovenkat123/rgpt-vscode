@@ -1,6 +1,8 @@
-# Review GPT Vscode
+<h3 align="center">
+  <img src="https://raw.githubusercontent.com/vibovenkat123/rgpt-vscode/main/assets/logo/shrinked_logo.png" />
+  <h1 align="center"> Review-GPT Vscode </h1>
+</h3>
 
-Bring the review-gpt experience to a brilliant text editor
 ## Features
 
 Adds the automated code review took [review-gpt](https://github.com/vibovenkat123/review-gpt) into vscode
