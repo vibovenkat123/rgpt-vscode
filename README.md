@@ -24,3 +24,7 @@ Added the keyword "vibovenkat123" in case if users look up my github
 ### 0.0.3
 
 Added a icon for recognition
+
+### 0.0.4
+
+Made the logo circular

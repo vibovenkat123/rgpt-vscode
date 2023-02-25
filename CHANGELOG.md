@@ -10,3 +10,6 @@
 
 ### [0.0.3]
 - Added a logo icon
+
+### [0.0.4]
+- Made the icon circular
