@@ -7,8 +7,9 @@ Adds the automated code review took [review-gpt](https://github.com/vibovenkat12
 
 ## Requirements
 
-[review-gpt](https://github.com/vibovenkat123/review-gpt)
-git
+* [review-gpt](https://github.com/vibovenkat123/review-gpt)
+* git
+* [VSCode](https://code.visualstudio.com)
 
 ## Release Notes
 
