@@ -2,6 +2,12 @@
   "name": "review-gpt",
   "displayName": "review-gpt",
   "description": "An automated code review tool powered by gpt3",
+  "license": "GNU GPLv3.0",
+  "publisher": "reviewgpt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vibovenkat123/rgpt-vscode"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.75.0"
@@ -10,9 +16,16 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:review-gpt.helloWorld"
+    "review-gpt.review"
   ],
   "main": "./out/extension.js",
+  "keywords": [
+    "reviewgpt",
+    "gpt",
+    "code review",
+    "review",
+    "vibovenkat"
+  ],
   "contributes": {
     "commands": [
       {
