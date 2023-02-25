@@ -4,11 +4,12 @@
   "description": "An automated code review tool powered by gpt3",
   "license": "GNU GPLv3.0",
   "publisher": "reviewgpt",
+  "icon": "assets/logo/shrinked_logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/vibovenkat123/rgpt-vscode"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },

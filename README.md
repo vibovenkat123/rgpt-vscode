@@ -20,3 +20,7 @@ Initial release of review-gpt. For now just added the running of the command
 ### 0.0.2
 
 Added the keyword "vibovenkat123" in case if users look up my github
+
+### 0.0.3
+
+Added a icon for recognition
