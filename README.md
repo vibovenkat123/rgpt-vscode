@@ -3,15 +3,15 @@
   <h1 align="center"> Review-GPT Vscode </h1>
 </h3>
 
-## Features
-
-Adds the automated code review took [review-gpt](https://github.com/vibovenkat123/review-gpt) into vscode
-
 ## Requirements
 
 * [review-gpt](https://github.com/vibovenkat123/review-gpt)
 * [git](https://git-scm.com)
 * [VSCode](https://code.visualstudio.com)
+
+## Usage
+
+press `cmd/ctrl+shift+p`, then type "Review Code"
 
 ## Release Notes
 
@@ -31,3 +31,7 @@ Added a icon for recognition
 ### 0.0.4
 
 Made the logo circular
+
+### 0.0.6
+
+Added the usage instructions + more descriptive command

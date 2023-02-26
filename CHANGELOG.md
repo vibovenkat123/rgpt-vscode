@@ -13,3 +13,7 @@
 
 ### [0.0.4]
 - Made the icon circular
+
+### [0.0.6]
+- Added Usage instructions
+- Change the command name to "RGPT:"
