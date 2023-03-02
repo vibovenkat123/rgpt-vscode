@@ -17,3 +17,8 @@
 ### [0.0.6]
 - Added Usage instructions
 - Change the command name to "RGPT:"
+
+### [0.1.6]
+- Add better error handling
+- Fix the formatting issues (e.g, having "[33" in the error message)
+- Added support with settings

@@ -7,20 +7,32 @@ import * as fs from 'fs';
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
 	let disposable = vscode.commands.registerCommand('review-gpt.review', () => {
 		if(vscode.window.activeTextEditor !== undefined && vscode.workspace.workspaceFolders !== undefined) {
 			const filePath = vscode.window.activeTextEditor.document.uri.fsPath;
 			const dirPath = vscode.workspace.workspaceFolders[0].uri.fsPath ; 
-			const command =  `rgpt --input "$(git diff ${filePath})"`;
+			const configuration = vscode.workspace.getConfiguration('rgpt');
+			const command =  `rgpt --input "$(git diff ${filePath})" --model "${configuration.model}" --max ${configuration.max_tokens} --temp ${configuration.temperature} --topp ${configuration.top_p} --freq ${configuration.frequence_penalty} --pres ${configuration.presence_penalty} --best ${configuration.best_of} --pretty=false`;
+			console.log(command);
 			vscode.window.showInformationMessage("Reviewing code...");
 			exec(command, {cwd: dirPath}, async (err, stdout, stderr) => {
 				if (err || stderr) {
 					if (err?.message.includes("Input flag is empty") || stderr.includes("Input flag is empty")) {
 						vscode.window.showErrorMessage(`The current file doesn't have a git diff. File: ${filePath}`);
 						return;
+					} else if (err?.message.includes("command not found")) {
+						vscode.window.showErrorMessage("Please install the review-gpt CLI before running");
+						return;
 					} else {
-						vscode.window.showErrorMessage(`Error:${err ? err: stderr}`);
+						let errorMessage;
+						if (err?.message !== undefined && err.message !== null) {
+							errorMessage = JSON.parse(err.message);
+						} else {
+							errorMessage = JSON.parse(stderr);
+						}
+						console.log(errorMessage);
+						vscode.window.showErrorMessage(`Error:${errorMessage.message}: ${errorMessage.error});
+						}`);
 						return;
 					}
 				}

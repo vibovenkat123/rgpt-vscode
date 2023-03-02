@@ -35,3 +35,7 @@ Made the logo circular
 ### 0.0.6
 
 Added the usage instructions + more descriptive command
+
+### 0.1.6
+
+Add the settings for the plugin
