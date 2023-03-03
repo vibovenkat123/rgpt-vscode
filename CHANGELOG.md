@@ -22,3 +22,6 @@
 - Add better error handling
 - Fix the formatting issues (e.g, having "[33" in the error message)
 - Added support with settings
+
+### [0.1.7]
+- Added cleaner error message

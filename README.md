@@ -39,3 +39,7 @@ Added the usage instructions + more descriptive command
 ### 0.1.6
 
 Add the settings for the plugin
+
+### 0.1.7
+
+Added a cleaner error message

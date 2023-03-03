@@ -13,7 +13,6 @@ export function activate(context: vscode.ExtensionContext) {
 			const dirPath = vscode.workspace.workspaceFolders[0].uri.fsPath ; 
 			const configuration = vscode.workspace.getConfiguration('rgpt');
 			const command =  `rgpt --input "$(git diff ${filePath})" --model "${configuration.model}" --max ${configuration.max_tokens} --temp ${configuration.temperature} --topp ${configuration.top_p} --freq ${configuration.frequence_penalty} --pres ${configuration.presence_penalty} --best ${configuration.best_of} --pretty=false`;
-			console.log(command);
 			vscode.window.showInformationMessage("Reviewing code...");
 			exec(command, {cwd: dirPath}, async (err, stdout, stderr) => {
 				if (err || stderr) {
@@ -31,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 							errorMessage = JSON.parse(stderr);
 						}
 						console.log(errorMessage);
-						vscode.window.showErrorMessage(`Error:${errorMessage.message}: ${errorMessage.error});
+						vscode.window.showErrorMessage(`Message: ${errorMessage.message}, Error: ${errorMessage.error});
 						}`);
 						return;
 					}
