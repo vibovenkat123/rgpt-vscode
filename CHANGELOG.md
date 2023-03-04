@@ -25,3 +25,6 @@
 
 ### [0.1.7]
 - Added cleaner error message
+
+### [0.1.8]
+- Using the newer flags (json, verbose)

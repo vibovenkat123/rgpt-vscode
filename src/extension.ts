@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const filePath = vscode.window.activeTextEditor.document.uri.fsPath;
 			const dirPath = vscode.workspace.workspaceFolders[0].uri.fsPath ; 
 			const configuration = vscode.workspace.getConfiguration('rgpt');
-			const command =  `rgpt --input "$(git diff ${filePath})" --model "${configuration.model}" --max ${configuration.max_tokens} --temp ${configuration.temperature} --topp ${configuration.top_p} --freq ${configuration.frequence_penalty} --pres ${configuration.presence_penalty} --best ${configuration.best_of} --pretty=false`;
+			const command =  `rgpt --input "$(git diff ${filePath})" --model "${configuration.model}" --max ${configuration.max_tokens} --temp ${configuration.temperature} --topp ${configuration.top_p} --freq ${configuration.frequence_penalty} --pres ${configuration.presence_penalty} --best ${configuration.best_of} --json`;
 			vscode.window.showInformationMessage("Reviewing code...");
 			exec(command, {cwd: dirPath}, async (err, stdout, stderr) => {
 				if (err || stderr) {

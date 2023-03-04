@@ -43,3 +43,6 @@ Add the settings for the plugin
 ### 0.1.7
 
 Added a cleaner error message
+
+### 0.1.8
+Using the new flags
