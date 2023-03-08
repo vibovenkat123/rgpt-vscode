@@ -46,3 +46,6 @@ Added a cleaner error message
 
 ### 0.1.8
 Using the new flags
+
+### 0.2.8
+Made GPT 3.5 the default model

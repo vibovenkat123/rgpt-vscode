@@ -28,3 +28,6 @@
 
 ### [0.1.8]
 - Using the newer flags (json, verbose)
+
+### [0.2.8]
+- Make gpt-3.5 the default for the model setting
