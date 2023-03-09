@@ -49,3 +49,6 @@ Using the new flags
 
 ### 0.2.8
 Made GPT 3.5 the default model
+
+### 1.2.8
+Made the flag names more concise per the CLI

@@ -31,3 +31,6 @@
 
 ### [0.2.8]
 - Make gpt-3.5 the default for the model setting
+
+### [1.2.8]
+- Made the flag names more concise per the CLI
